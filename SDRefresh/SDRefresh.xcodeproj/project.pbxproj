@@ -12,6 +12,14 @@
 		73ECF477204A786F00D5E38F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73ECF475204A786F00D5E38F /* Main.storyboard */; };
 		73ECF479204A786F00D5E38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73ECF478204A786F00D5E38F /* Assets.xcassets */; };
 		73ECF47C204A786F00D5E38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73ECF47A204A786F00D5E38F /* LaunchScreen.storyboard */; };
+		73ECF48B204A79A500D5E38F /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECF487204A79A400D5E38F /* UIScrollViewExtension.swift */; };
+		73ECF48C204A79A500D5E38F /* HZUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECF488204A79A500D5E38F /* HZUIViewExtension.swift */; };
+		73ECF48D204A79A500D5E38F /* UIScrollViewRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECF489204A79A500D5E38F /* UIScrollViewRefreshExtension.swift */; };
+		73ECF48E204A79A500D5E38F /* UIlabelRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECF48A204A79A500D5E38F /* UIlabelRefreshExtension.swift */; };
+		73ECF490204A7B9F00D5E38F /* HZRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECF48F204A7B9F00D5E38F /* HZRefreshBaseView.swift */; };
+		73ECF492204A83DA00D5E38F /* HZRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECF491204A83DA00D5E38F /* HZRefreshHeader.swift */; };
+		73ECF494204A884A00D5E38F /* HZRefreshStateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECF493204A884A00D5E38F /* HZRefreshStateHeaderView.swift */; };
+		73ECF496204A8AA300D5E38F /* HZRefreshNormalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECF495204A8AA300D5E38F /* HZRefreshNormalHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		73ECF478204A786F00D5E38F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73ECF47B204A786F00D5E38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73ECF47D204A786F00D5E38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73ECF487204A79A400D5E38F /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		73ECF488204A79A500D5E38F /* HZUIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZUIViewExtension.swift; sourceTree = "<group>"; };
+		73ECF489204A79A500D5E38F /* UIScrollViewRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewRefreshExtension.swift; sourceTree = "<group>"; };
+		73ECF48A204A79A500D5E38F /* UIlabelRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIlabelRefreshExtension.swift; sourceTree = "<group>"; };
+		73ECF48F204A7B9F00D5E38F /* HZRefreshBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRefreshBaseView.swift; sourceTree = "<group>"; };
+		73ECF491204A83DA00D5E38F /* HZRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRefreshHeader.swift; sourceTree = "<group>"; };
+		73ECF493204A884A00D5E38F /* HZRefreshStateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRefreshStateHeaderView.swift; sourceTree = "<group>"; };
+		73ECF495204A8AA300D5E38F /* HZRefreshNormalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZRefreshNormalHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,10 @@
 		73ECF470204A786F00D5E38F /* SDRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				73ECF484204A794900D5E38F /* BaseView */,
+				73ECF486204A794A00D5E38F /* category */,
+				73ECF485204A794A00D5E38F /* footer */,
+				73ECF483204A794900D5E38F /* header */,
 				73ECF471204A786F00D5E38F /* AppDelegate.swift */,
 				73ECF473204A786F00D5E38F /* ViewController.swift */,
 				73ECF475204A786F00D5E38F /* Main.storyboard */,
@@ -62,6 +82,42 @@
 				73ECF47D204A786F00D5E38F /* Info.plist */,
 			);
 			path = SDRefresh;
+			sourceTree = "<group>";
+		};
+		73ECF483204A794900D5E38F /* header */ = {
+			isa = PBXGroup;
+			children = (
+				73ECF491204A83DA00D5E38F /* HZRefreshHeader.swift */,
+				73ECF493204A884A00D5E38F /* HZRefreshStateHeaderView.swift */,
+				73ECF495204A8AA300D5E38F /* HZRefreshNormalHeaderView.swift */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		73ECF484204A794900D5E38F /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				73ECF48F204A7B9F00D5E38F /* HZRefreshBaseView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		73ECF485204A794A00D5E38F /* footer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = footer;
+			sourceTree = "<group>";
+		};
+		73ECF486204A794A00D5E38F /* category */ = {
+			isa = PBXGroup;
+			children = (
+				73ECF488204A79A500D5E38F /* HZUIViewExtension.swift */,
+				73ECF48A204A79A500D5E38F /* UIlabelRefreshExtension.swift */,
+				73ECF487204A79A400D5E38F /* UIScrollViewExtension.swift */,
+				73ECF489204A79A500D5E38F /* UIScrollViewRefreshExtension.swift */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +146,7 @@
 		73ECF466204A786E00D5E38F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HZ;
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "韩志峰";
@@ -136,8 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73ECF48E204A79A500D5E38F /* UIlabelRefreshExtension.swift in Sources */,
+				73ECF490204A7B9F00D5E38F /* HZRefreshBaseView.swift in Sources */,
+				73ECF494204A884A00D5E38F /* HZRefreshStateHeaderView.swift in Sources */,
+				73ECF492204A83DA00D5E38F /* HZRefreshHeader.swift in Sources */,
 				73ECF474204A786F00D5E38F /* ViewController.swift in Sources */,
+				73ECF48D204A79A500D5E38F /* UIScrollViewRefreshExtension.swift in Sources */,
 				73ECF472204A786F00D5E38F /* AppDelegate.swift in Sources */,
+				73ECF48C204A79A500D5E38F /* HZUIViewExtension.swift in Sources */,
+				73ECF496204A8AA300D5E38F /* HZRefreshNormalHeaderView.swift in Sources */,
+				73ECF48B204A79A500D5E38F /* UIScrollViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
